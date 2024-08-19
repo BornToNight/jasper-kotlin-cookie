@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="annexCookie" pageWidth="511" pageHeight="380" columnWidth="511" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="8a9c108a-5fb4-4f14-9ae4-f9904b5cb22f">
+	<parameter name="sub_jasper_report2" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[Объект шаблона вложенного отчёта]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="documentNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[documentNumber]]></fieldDescription>
+	</field>
+	<variable name="PP" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[1]]></variableExpression>
+	</variable>
+	<pageHeader>
+		<band height="42">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="15" width="511" height="12" uuid="ba645d70-e854-4a9d-a4e3-2c9a172b2730">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Приложение к документу №" + $F{documentNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="34" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="330" y="0" width="181" height="34" uuid="cb2f33c9-de41-4704-992d-382f6c028b04">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Количество]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="70" height="34" uuid="f7d94ad2-0c3d-4bd1-b0eb-115e7b5a70f6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[№]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="0" width="260" height="34" uuid="96969813-efd6-4b87-bfa9-f647b5baedb6"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[Марка печенек]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<subreport>
+				<reportElement x="0" y="0" width="511" height="16" uuid="019f3c46-8192-4bc7-99c4-d3176d13f058">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="sub_jasper_report2">
+					<subreportParameterExpression><![CDATA[$P{sub_jasper_report2}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource) $P{REPORT_DATA_SOURCE}).subDataSource("annexRowList")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{sub_jasper_report2}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

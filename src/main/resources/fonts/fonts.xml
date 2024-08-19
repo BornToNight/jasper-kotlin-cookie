@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+    <!-- копия каталога /usr/share/fonts/truetype/liberation2 -->
+
+    <fontFamily name="Liberation Serif">
+        <normal><![CDATA[fonts/liberation2/LiberationSerif-Regular.ttf]]></normal>
+        <bold><![CDATA[fonts/liberation2/LiberationSerif-Bold.ttf]]></bold>
+        <italic><![CDATA[fonts/liberation2/LiberationSerif-Italic.ttf]]></italic>
+        <boldItalic><![CDATA[fonts/liberation2/LiberationSerif-BoldItalic.ttf]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+    </fontFamily>
+</fontFamilies>

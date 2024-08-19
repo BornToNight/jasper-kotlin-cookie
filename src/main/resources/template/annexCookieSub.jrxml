@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="annexCookieSub" pageWidth="511" pageHeight="60" orientation="Landscape" columnWidth="511" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="01f93799-5944-4c56-985d-908336287d43">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cookieMark" class="java.lang.String">
+		<fieldDescription><![CDATA[cookieMark]]></fieldDescription>
+	</field>
+	<field name="cookieCount" class="java.lang.String">
+		<fieldDescription><![CDATA[cookieCount]]></fieldDescription>
+	</field>
+	<variable name="pp" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[1]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="16" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="70" y="0" width="260" height="16" isPrintWhenDetailOverflows="true" uuid="4b64dffb-3830-4250-b9c1-083289e58d64">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cookieMark}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="330" y="0" width="181" height="16" isPrintWhenDetailOverflows="true" uuid="0724f82a-4508-48c7-9f44-34a9256ac1a9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cookieCount}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="0" width="70" height="16" isPrintWhenDetailOverflows="true" uuid="b3493334-46b4-4e60-b3ab-310a45b0091e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{pp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

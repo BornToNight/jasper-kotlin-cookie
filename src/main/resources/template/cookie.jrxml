@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cookie" pageWidth="595" pageHeight="842" columnWidth="511" leftMargin="56" rightMargin="28" topMargin="28" bottomMargin="28" whenResourceMissingType="Empty" uuid="4c69f263-c4e4-42d7-9bbc-8e39fcaccab5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="sub_jasper_report" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[Объект шаблона вложенного отчёта]]></parameterDescription>
+	</parameter>
+	<parameter name="sub_jasper_report2" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false">
+		<parameterDescription><![CDATA[Объект шаблона вложенного отчёта]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="documentNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[documentNumber]]></fieldDescription>
+	</field>
+	<field name="applicantFullName" class="java.lang.String">
+		<fieldDescription><![CDATA[applicantFullName]]></fieldDescription>
+	</field>
+	<field name="cookie" class="java.lang.String">
+		<fieldDescription><![CDATA[cookie]]></fieldDescription>
+	</field>
+	<field name="applicantPosAndShortName" class="java.lang.String">
+		<fieldDescription><![CDATA[applicantPosAndShortName]]></fieldDescription>
+	</field>
+	<field name="applicantSignDate" class="java.lang.String">
+		<fieldDescription><![CDATA[applicantSignDate]]></fieldDescription>
+	</field>
+	<field name="approverPosAndShortName" class="java.lang.String">
+		<fieldDescription><![CDATA[approverPosAndShortName]]></fieldDescription>
+	</field>
+	<field name="approverSignDate" class="java.lang.String">
+		<fieldDescription><![CDATA[approverSignDate]]></fieldDescription>
+	</field>
+	<field name="annexCookieJasperDto.documentNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[annexCookieJasperDto.documentNumber]]></fieldDescription>
+	</field>
+	<title>
+		<band height="38" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement positionType="Float" x="0" y="24" width="511" height="14" uuid="2b348adb-39b5-44e2-8eb3-babafbcd91ea">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Заявление на ежедневное получение печенек №" + $F{documentNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="347" splitType="Immediate">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="69" width="110" height="18" uuid="8d28218d-cc4b-46b4-b151-dbb16c5c20aa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11"/>
+				</textElement>
+				<text><![CDATA[марок:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="134" width="511" height="18" uuid="9b19a649-7a97-45a4-a988-662905660202">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11"/>
+				</textElement>
+				<text><![CDATA[Заявитель]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="110" y="87" width="401" height="17" uuid="59d870fd-3d38-4e97-8b34-47f6ae50957c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="11" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(марка, шт.)]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="110" y="69" width="401" height="18" uuid="d90c0e99-3190-43e7-ab84-ff28a27586eb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cookie}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="0" y="152" width="370" height="18" uuid="1b3755f0-fdff-469b-8d11-1a1fb84613ef">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicantPosAndShortName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="170" width="370" height="12" uuid="3ee8e715-e6cd-42bb-9dc1-c45c43db7573">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="9" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(должность, фамилия, инициалы]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="346" width="100" height="1" uuid="81a2a7b9-7548-4b0d-bdf3-2a902c34edf5"/>
+			</break>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="18" width="380" height="14" uuid="01374399-ee07-402d-8d24-d4063291436f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="11" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(Ф.И.О.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="20" height="18" uuid="28bc6d72-7cd8-4651-8493-a2a12e440ee9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11"/>
+				</textElement>
+				<text><![CDATA[Я,]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="20" y="0" width="360" height="18" uuid="d7e7074c-c5c2-42e5-8442-f31bed3692ef">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicantFullName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="380" y="0" width="131" height="18" uuid="2408eb03-9d43-47c0-93bc-41c29dd717dd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[прошу, предоставить мне]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="431" y="152" width="80" height="18" uuid="e6879447-a393-4c74-867a-c9545e146b8c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicantSignDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="431" y="170" width="80" height="12" uuid="3c3949b7-9545-47a3-a15b-8047ad112279">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="9" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(дата)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="370" y="170" width="61" height="12" uuid="080e13ab-2a38-48de-be44-59ac7a794890">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="9" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(подпись)]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="-1" y="211" width="370" height="18" uuid="fe7e13f6-2e81-486a-b749-d3a0ef8a699e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{approverPosAndShortName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="430" y="229" width="80" height="12" uuid="341b1845-f495-42b3-9f68-e6ea2e40d611">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="9" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(дата)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="-1" y="193" width="511" height="18" uuid="ce4e9cb1-4adb-4491-8118-9d5b79242885">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11"/>
+				</textElement>
+				<text><![CDATA[Утверждающий]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="-1" y="229" width="370" height="12" uuid="10e04652-5315-420d-963d-8000ac8b4e26">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="9" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(должность, фамилия, инициалы]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement positionType="Float" x="430" y="211" width="80" height="18" uuid="ef19a205-bb7f-4551-9f7a-05fddcabaf31">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<bottomPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Liberation Serif" size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{approverSignDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="369" y="229" width="61" height="12" uuid="78e08410-8757-4fc0-a24b-25329c21a3de">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Liberation Serif" size="9" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[(подпись)]]></text>
+			</staticText>
+		</band>
+		<band height="436" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<printWhenExpression><![CDATA[$F{annexCookieJasperDto.documentNumber} != ""]]></printWhenExpression>
+			<subreport>
+				<reportElement positionType="Float" x="0" y="0" width="511" height="435" uuid="6a241209-abce-4764-819d-52c6f7dc6d50">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<subreportParameter name="sub_jasper_report">
+					<subreportParameterExpression><![CDATA[$P{sub_jasper_report}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="sub_jasper_report2">
+					<subreportParameterExpression><![CDATA[$P{sub_jasper_report2}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource) $P{REPORT_DATA_SOURCE}).subDataSource("annexCookieJasperDto")]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{sub_jasper_report}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
